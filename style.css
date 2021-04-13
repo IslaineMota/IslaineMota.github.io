@@ -1,0 +1,254 @@
+html, boby, figure, img, div, input, textarea, p, h1, h2,h3,h4,h5,h6,ul,li,a{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+}
+
+.container{
+   margin: 0 auto;
+   padding: 20px;
+}
+.containerDois{
+   padding: 20px;
+}
+.hidden{
+   display: none;
+}
+.artigo p{
+   color: #6eced5;
+}
+.artigo div nav ul li a img {
+   width: 30px;
+   border-radius: 15%;
+   padding: 3px;
+   transition: 1s;
+}
+.artigo div nav ul li a img:hover {
+   background-color: #6eced5;
+}
+.alinhamentoArtigo {
+   display: flex;
+   justify-content:space-between;
+   margin: 0 184px 0 0;
+}
+.rodape {
+   background-image: linear-gradient(#6eced5, black);
+   width: 100%;
+   max-width: 100%;
+   height: 30px;
+}
+.barra{
+   background-color: #353b48;
+   display: block;
+   height: 2px;
+   border: 1px solid rgba(0,0,0,.3);
+   border-radius: 3px;
+   overflow: hidden;
+   box-shadow: 0 0 10px #2187e7b3;
+}
+.barra span{
+   height: 2px;
+   float: left;
+   background:  #6eced5 ;
+}
+.html{
+   width: 25%;
+}
+.java{
+   width:10%
+}
+.css{
+   width: 25%;
+}
+.react{
+   width: 5%;
+}
+.gestao{
+   width: 50%;
+}
+#perfil{
+   font-size: 10px;
+   margin: 14px 0 0 0;
+}
+body{
+   font-family: 'Poppins', sans-serif;
+   text-align: justify;
+   background-image: url(./Assets/Imagens/geek.png);
+   background-size:cover;
+   color: whitesmoke; 
+}
+header .coluna-esquerda img{
+   max-width: 200px;
+   border-radius: 100%;
+   max-width: 250px;
+   border-style: solid;
+   border-width: 4px;
+   border-color: #6eced5;
+   margin: 0 0px 0 26px;
+}
+header .coluna-direita{
+   margin: 19px 0 0 24px;
+}
+header .coluna h1{
+   font-size: 24px;
+   margin: -21px 0 0 53px;
+}
+header .coluna-esquerda p{
+   color: #696969;
+   margin: 0 0 13px 0;
+}
+header .socialmedias{
+   margin: 8px 0 -25px 35px;
+}
+
+header .sublinha{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   margin: 0 25% 0 0;
+}
+header .socialmedias nav ul li{
+   margin: 0 0 12px 0;
+   width: 60px;
+   border-radius: 5%;
+   background-color: #6eced5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3px;
+   transition: 1s;
+}
+header .socialmedias nav ul li:hover{
+   background-color: black;
+} 
+header .socialmedias nav ul li a{
+   color: white;
+   font-size: 10px;
+   padding: 3px;
+}
+header .socialmedias nav ul li a img{
+   max-width: 25px;
+   display: flex;
+   margin: 0 auto;
+}
+header .socialmedias .sublinha nav ul li a img p{
+   font-size: 10px;
+}
+main .coluna{
+   background-color: black;
+}
+main.container p{
+   text-align: justify;
+   font-size: 14px;
+}
+main .coluna section{
+   border: 1px;
+   border-style: solid;
+   border-color: #c2eeee;
+   margin: 0 0 20px 0;
+   padding: 15px;
+}
+main .coluna section strong{
+   margin-right: 2px;
+}
+main .coluna section strong::before{
+   position: absolute;
+   content: '';
+   height: 24px;
+   width: 6px;
+   background-color:#6eced5 ;
+}
+main .coluna-esquerda section ul li{
+   margin-top: 14px;
+   font-size: 10px;
+}
+main .coluna-direita p{
+   margin-top: 14px;
+   margin: 0 0 0 0;
+   font-size: 8px;
+}
+main .coluna-direita section ul li{
+   font-size: 10px;
+   margin: 14px 0 0 0;
+}
+main .coluna-esquerda p{
+   font-size: 8px;
+   margin-bottom: 3px;
+}
+@media only screen and (min-width: 768px){
+   .container{
+      width: 100%;
+      max-width: 60%;
+      margin: 0 auto;
+      padding: 20px;
+   }  
+   .containerDois{
+      width: 100%;
+      max-width: 78%;
+      margin: 0 auto;
+      padding: 20px;
+   }
+   .coluna{
+      flex-basis: 48%; 
+   }
+   .linha{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+   }
+   header .coluna-esquerda img{
+      max-width: 200px;
+      border-radius: 100%;
+      max-width: 250px;
+      border-style: solid;
+      border-width: 4px;
+      border-color: #6eced5;
+   }
+   header .coluna-direita{
+      margin: 25px 0 0 0;
+   }
+   header .coluna h1{
+      font-size: 24px;
+      margin: 0 auto;
+   }
+   header .sublinha{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      margin: -26% 34px 0 52.8%;
+   }
+
+   header .socialmedias{
+      flex-basis: 75%;
+      margin: 0 auto;
+   }
+   .alinhamentoArtigo {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items:flex-start;
+      justify-content:space-between;
+      margin: 0 350px 0 0
+   }
+   #perfil{
+      font-size: 18px;
+      margin: 14px 0 0 0;
+   }
+   main .coluna-esquerda section ul li{
+      margin-top: 14px;
+      font-size: 18px;
+   }
+   main .coluna-direita p{
+      margin-top: 14px;
+      margin: 0 0 0 0;
+      font-size: 14px;
+   }
+   main .coluna-esquerda p{
+      font-size: 14px;
+      margin-bottom: 3px;
+   }
+   main .coluna-direita section ul li{
+      font-size: 18px;
+      margin: 14px 0 0 0;
+   }
+}
